@@ -1,4 +1,5 @@
-#Assignment
+# Assignment
+
 A.
 Create a hash class, whose instances will serve as a functors for calcullation of hash values of class std::tuple
 The hash should be calculated using a combination of hash values of each of its items' values
