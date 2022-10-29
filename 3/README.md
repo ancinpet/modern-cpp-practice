@@ -1,4 +1,5 @@
 #Assignment
+
 A.
 Create a smart pointer deep_ptr<T>, which will support copy semantics.
 Copying of this "deep pointer" dp1 of type deep_ptr<T>, which owns object "a" of type "T" results in a copy dp2 which will own object of type "T", that will be created as a copy of object "a"
