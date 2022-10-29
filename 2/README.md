@@ -19,14 +19,23 @@ TupleElement<0, Tuple<const long&> >::type has to be evaluated as const long&
 C.
 
 Function get, which returns a reference to "I"th element of Tuple can look like this in C++17:
+
 template <size_t I, typename T>
+
 auto& get(T& tuple)
+
 {
+
    if constexpr (I == 0)
+   
       return tuple.t_;
+      
    else
+   
       return get<I - 1>(tuple.ts_);
+      
 }
+
 
 In C++11 or C++14 we cannot use if constexpr and this easy implementation cannot be used.
 Implement the get function in C++11 or C++14.
